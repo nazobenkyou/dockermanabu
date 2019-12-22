@@ -20,7 +20,7 @@ Dockerfileの中へ
 
 ### dockerコマンドについて
 
-docker build -t <ネーム>:<タッグ> .
+docker build -t \<ネーム\>:\<タッグ\> .
 
 Dockerfileのところでビルドすることができます、ビルドときにARGというargumentsのことで書くことができます
 
@@ -33,7 +33,7 @@ containerの中にはエラー出てるときにこのコマンド使ってく�
 まずCMDのdockerfileコメントして
 それでビルドと。。。
 
-docker run -it <イメージ>:<タッグ> /bin/sh
+docker run -it \<イメージ\>:\<タッグ\> /bin/sh
 
 itのparameterはiteractiveということで,そしてalpineはshスクリプトあるのでshのshellをしよう
 
