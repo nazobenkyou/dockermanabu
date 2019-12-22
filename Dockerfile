@@ -19,5 +19,9 @@ COPY . .
 # Exposes the port outside the container
 EXPOSE 8080
 
+# We specify volume directory to share it with our local machine, this volume will be created in build
+# phase, but we still need to specify the path when running it
+VOLUME [ "/data" ]
+
 # Although we set up the workdir, to execute the app we need to specify the absolute path
 CMD ["/app/dockermanabu"]
