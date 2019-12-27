@@ -1,12 +1,14 @@
 package main
 
-import "github.com/gorilla/mux"
+import (
+	"github.com/gorilla/mux"
 
-import "net/http"
+	"net/http"
 
-import "io/ioutil"
+	"io/ioutil"
 
-import "fmt"
+	"fmt"
+)
 
 func readContent() ([]byte, error) {
 	data, err := ioutil.ReadFile("/data/tero.txt")
@@ -17,7 +19,7 @@ func readContent() ([]byte, error) {
 	return data, nil
 }
 
-func main()  {
+func main() {
 	r := mux.NewRouter()
 
 	r.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
