@@ -1,10 +1,12 @@
 package main
 
-import "github.com/gorilla/mux"
+import (
+	"github.com/gorilla/mux"
 
-import "net/http"
+	"net/http"
+)
 
-func main()  {
+func main() {
 	r := mux.NewRouter()
 
 	r.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
