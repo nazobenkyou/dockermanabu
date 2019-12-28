@@ -1,5 +1,13 @@
 # Docker 学ぶために
 
+## Requirements
+
+- Golang - https://golang.org/dl/
+- Docker - https://docs.docker.com/install/
+- Docker compose - https://github.com/docker/compose/releases
+- Bash/zsh/... console/linux console on windows https://itsfoss.com/install-bash-on-windows/
+- git - https://git-scm.com/downloads
+
 ## Get started
 
 ```bash
