@@ -12,8 +12,18 @@
 
 ```bash
 go mod download
+```
 
+Linux users:
+
+```bash
 CGO_ENABLED=0 go build
+```
+
+MacOS users:
+
+```bash
+GOOS=linux GOARCH=amd64 go build -tags netgo -a -v
 ```
 
 ## Docker
